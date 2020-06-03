@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bird : MonoBehaviour {
+public class Bird : MonoBehaviour,IGameObject {
 
-	// Use this for initialization
+	[SerializeField]
+	private Rigidbody2D _rigidbody = null;
+
+	[SerializeField]
+	private float _jumpValue = 1.0f;
+
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void GameUpdate()
+	{
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+			_rigidbody.AddForce(new Vector2(0, _jumpValue));
+		}
 	}
+
 }

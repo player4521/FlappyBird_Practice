@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pipe : MonoBehaviour
+public class Pipe : MonoBehaviour, IGameObject
 {
     // Start is called before the first frame update
     void Start()
@@ -10,8 +10,7 @@ public class Pipe : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GameUpdate()
     {
         
     }

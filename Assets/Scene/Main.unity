@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 105008207}
-  _jumpValue: 150
+  _jumpValue: 15
 --- !u!61 &105008206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.05
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607747895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.09, z: 0}
+  m_LocalPosition: {x: 0.011, y: -0.174, z: 0.079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 736324833}
@@ -506,6 +506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b895038c5afbe4448f6b59249930920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startPositionX: 0
+  _endPositionX: 0.5
+  _pipeTop: {fileID: 736324832}
 --- !u!1 &659549016
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +520,7 @@ GameObject:
   - component: {fileID: 659549017}
   - component: {fileID: 659549018}
   m_Layer: 0
-  m_Name: pipe2
+  m_Name: pipeBottom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659549016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.903, y: -0.95899993, z: 0}
+  m_LocalPosition: {x: 0.9, y: -0.915, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 607747896}
@@ -598,7 +601,7 @@ GameObject:
   - component: {fileID: 736324833}
   - component: {fileID: 736324834}
   m_Layer: 0
-  m_Name: pipe1
+  m_Name: pipeTop
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -612,7 +615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736324832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.903, y: 0.828, z: 0}
+  m_LocalPosition: {x: 0.905, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 607747896}
@@ -905,6 +908,9 @@ MonoBehaviour:
   _ground: {fileID: 832600128}
   _pipe: {fileID: 607747897}
   _speed: 0.005
+  _creatTime: 1.5
+  _pipeRandomHeight: 0.4
+  _pipeRandomPositionY: -2
 --- !u!4 &1892105260
 Transform:
   m_ObjectHideFlags: 0

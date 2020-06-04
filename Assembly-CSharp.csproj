@@ -63,12 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Bird.cs" />
-    <Compile Include="Assets\Script\Ground.cs" />
-    <Compile Include="Assets\Script\IGameObject.cs" />
-    <Compile Include="Assets\Script\Manager.cs" />
-    <Compile Include="Assets\Script\MoveObject.cs" />
-    <Compile Include="Assets\Script\Pipe.cs" />
+    <Compile Include="Assets\Script\Game\Bird.cs" />
+    <Compile Include="Assets\Script\Game\Ground.cs" />
+    <Compile Include="Assets\Script\Game\IGameObject.cs" />
+    <Compile Include="Assets\Script\Game\Manager.cs" />
+    <Compile Include="Assets\Script\Game\MoveObject.cs" />
+    <Compile Include="Assets\Script\Game\Pipe.cs" />
+    <Compile Include="Assets\Script\Game\Singleton.cs" />
+    <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

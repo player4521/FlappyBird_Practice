@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class Manager : Singleton<Manager>
 {
-    private static Manager _instance = null;
-    public static Manager Instance { get { return _instance; } }
-
     [SerializeField]
     private Bird _bird = null;
     [SerializeField]
@@ -35,19 +31,20 @@ public class Manager : MonoBehaviour
 
     // ゲームが始まった時スクリプト要素を非活性化しても実行
     // 예) 적들의 총알을 초기화
-    void Awake()
-    {
-        _instance = this;
-    }
+    //void Awake()
+    //{
+    //    _instance = this;
+    //}
 
     // Awake다음으로 호출, 스크립트요소가 활성화 상태여야 함
     // 예) 적들에게 총을 쏠 능력을 부여
     private void Start()
     {
-        _bplay = true;
+        //_bplay = true;
     }
     void Update()
     {
+        _bird.FreezePositionY(!_bplay);
         if (_bplay)
         {
             // 1.5초마다 파이프 생성

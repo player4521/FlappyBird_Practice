@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Manager : Singleton<Manager>
@@ -12,9 +14,8 @@ public class Manager : Singleton<Manager>
 
     [SerializeField]
     private float _speed = 0.001f;
-
     [SerializeField]
-    private float _creatTime = 1.5f;
+    private float _createTime = 1.0f;
     [SerializeField]
     private float _pipeRandomHeight = 0.4f;
     [SerializeField]
@@ -24,32 +25,64 @@ public class Manager : Singleton<Manager>
 
     private List<Pipe> _pipeList = new List<Pipe>();
 
-    private bool _bplay = false;
+    private bool _bPlay = false;
     private int _score = 0;
+    private int _bestScore = 0;
+    private bool _bCurrentBestScore = false;
+
+    public int Score { get { return _score; } }
+    public int BestScore { get { return _bestScore; } }
+    public bool isCurrentBestScore { get { return _bCurrentBestScore; } }
+
     public float Speed { get { return _speed; } }
-    public bool IsPlay { get { return _bplay; } set { _bplay = value; } }
+    public bool IsPlay
+    {
+        get { return _bPlay; }
+        set
+        {
+            _bPlay = value;
+            if (!_bPlay)
+            {
+                UIManager.Instance.InvokeGameOver();
+            }
+        }
+    }
 
-    // ゲームが始まった時スクリプト要素を非活性化しても実行
-    // 예) 적들의 총알을 초기화
-    //void Awake()
-    //{
-    //    _instance = this;
-    //}
-
-    // Awake다음으로 호출, 스크립트요소가 활성화 상태여야 함
-    // 예) 적들에게 총을 쏠 능력을 부여
     private void Start()
     {
-        //_bplay = true;
+        Init();
+        UIManager.Instance.ShowTitle();
+        _bestScore = PlayerPrefs.GetInt("_bestScore");
     }
+
+    private void Init()
+    {
+        _bCurrentBestScore = false;
+        _bPlay = false;
+        _score = 0;
+        _currentTime = 0.0f;
+        _bird.Init();
+        _ground.Init();
+        _pipeList.ToArray().ToList().ForEach(x => Remove(x));
+
+        UIManager.Instance.Init();
+    }
+
+    public void Replay()
+    {
+        Debug.Log("Replay");
+        Init();
+        UIManager.Instance.ShowScore();
+        _bPlay = true;
+    }
+
     void Update()
     {
-        _bird.FreezePositionY(!_bplay);
-        if (_bplay)
+        _bird.FreezePositionY(!_bPlay);
+        if (_bPlay)
         {
-            // 1.5초마다 파이프 생성
             _currentTime += Time.deltaTime;
-            if (_creatTime < _currentTime)
+            if (_createTime < _currentTime)
             {
                 _currentTime = 0;
 
@@ -63,7 +96,7 @@ public class Manager : Singleton<Manager>
             _pipeList.ForEach((x) =>
             {
                 x.GameUpdate();
-                if (x.isNeedInvokeScoreCheck(_bird.transform.position))
+                if (x.IsNeedInvokeScoreCheck(_bird.transform.position))
                 {
                     InvokeScore();
                 }
@@ -71,10 +104,10 @@ public class Manager : Singleton<Manager>
         }
     }
 
-    // 파이프 제거
     public void Remove(Pipe target)
     {
         _pipeList.Remove(target);
+        Debug.Log(target.gameObject.name + " / " + _pipeList.Count);
         DestroyImmediate(target.gameObject);
     }
 
@@ -82,6 +115,16 @@ public class Manager : Singleton<Manager>
     {
         _score++;
 
-        Debug.Log(_score);
+        if (_bestScore < _score)
+        {
+            _bCurrentBestScore = true;
+            _bestScore = _score;
+
+            PlayerPrefs.SetInt("_bestScore", _bestScore);
+            PlayerPrefs.Save();
+        }
+
+        UIManager.Instance.Score = _score;
+        //Debug.Log( _score );
     }
 }

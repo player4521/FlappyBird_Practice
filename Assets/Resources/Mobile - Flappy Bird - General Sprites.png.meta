@@ -28,7 +28,7 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_7
   - first:
       213: 21300016
-    second: Mobile - Flappy Bird - General Sprites_8
+    second: uiImage
   - first:
       213: 21300018
     second: Flappy Bird - General Sprites_9
@@ -37,7 +37,7 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_10
   - first:
       213: 21300022
-    second: Mobile - Flappy Bird - General Sprites_11
+    second: _0
   - first:
       213: 21300024
     second: Flappy Bird - General Sprites_12
@@ -46,7 +46,7 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_13
   - first:
       213: 21300028
-    second: Mobile - Flappy Bird - General Sprites_14
+    second: number0
   - first:
       213: 21300030
     second: Mobile - Flappy Bird - General Sprites_15
@@ -61,25 +61,25 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_18
   - first:
       213: 21300038
-    second: Mobile - Flappy Bird - General Sprites_19
+    second: number1
   - first:
       213: 21300040
     second: Mobile - Flappy Bird - General Sprites_20
   - first:
       213: 21300042
-    second: Mobile - Flappy Bird - General Sprites_21
+    second: okButton
   - first:
       213: 21300044
-    second: Mobile - Flappy Bird - General Sprites_22
+    second: number2
   - first:
       213: 21300046
-    second: Mobile - Flappy Bird - General Sprites_23
+    second: Rank-Bronze
   - first:
       213: 21300048
     second: Mobile - Flappy Bird - General Sprites_24
   - first:
       213: 21300050
-    second: Mobile - Flappy Bird - General Sprites_25
+    second: Rank-None
   - first:
       213: 21300052
     second: Mobile - Flappy Bird - General Sprites_26
@@ -91,7 +91,7 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_28
   - first:
       213: 21300058
-    second: Mobile - Flappy Bird - General Sprites_29
+    second: number3
   - first:
       213: 21300060
     second: Mobile - Flappy Bird - General Sprites_30
@@ -106,16 +106,16 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_33
   - first:
       213: 21300068
-    second: Mobile - Flappy Bird - General Sprites_34
+    second: number4
   - first:
       213: 21300070
     second: Mobile - Flappy Bird - General Sprites_35
   - first:
       213: 21300072
-    second: Mobile - Flappy Bird - General Sprites_36
+    second: number5
   - first:
       213: 21300074
-    second: Mobile - Flappy Bird - General Sprites_37
+    second: Title-Game Over
   - first:
       213: 21300076
     second: Mobile - Flappy Bird - General Sprites_38
@@ -124,61 +124,76 @@ TextureImporter:
     second: Mobile - Flappy Bird - General Sprites_39
   - first:
       213: 21300080
-    second: Mobile - Flappy Bird - General Sprites_40
+    second: _6
   - first:
       213: 21300082
-    second: Mobile - Flappy Bird - General Sprites_41
+    second: _7
   - first:
       213: 21300084
-    second: Mobile - Flappy Bird - General Sprites_42
+    second: startButton
   - first:
       213: 21300086
-    second: Mobile - Flappy Bird - General Sprites_43
+    second: _8
   - first:
       213: 21300088
-    second: Mobile - Flappy Bird - General Sprites_44
+    second: _9
   - first:
       213: 21300090
-    second: Mobile - Flappy Bird - General Sprites_45
+    second: Title-Get Ready
   - first:
       213: 21300092
     second: Mobile - Flappy Bird - General Sprites_46
   - first:
       213: 21300094
-    second: Mobile - Flappy Bird - General Sprites_47
+    second: Rank-Gold
   - first:
       213: 21300096
-    second: Mobile - Flappy Bird - General Sprites_48
+    second: Rank-Silver
   - first:
       213: 21300098
     second: Mobile - Flappy Bird - General Sprites_49
   - first:
       213: 21300100
-    second: Mobile - Flappy Bird - General Sprites_50
+    second: Rank - New
   - first:
       213: 21300102
-    second: Mobile - Flappy Bird - General Sprites_51
+    second: number6
   - first:
       213: 21300104
-    second: Mobile - Flappy Bird - General Sprites_52
+    second: number7
   - first:
       213: 21300106
-    second: Mobile - Flappy Bird - General Sprites_53
+    second: number8
   - first:
       213: 21300108
-    second: Mobile - Flappy Bird - General Sprites_54
+    second: number9
   - first:
       213: 21300110
-    second: Mobile - Flappy Bird - General Sprites_55
+    second: _2
   - first:
       213: 21300112
-    second: Mobile - Flappy Bird - General Sprites_56
+    second: _3
   - first:
       213: 21300114
-    second: Mobile - Flappy Bird - General Sprites_57
+    second: _4
   - first:
       213: 21300116
-    second: Mobile - Flappy Bird - General Sprites_58
+    second: _5
+  - first:
+      213: -3005269836947684463
+    second: Mobile - Flappy Bird - General Sprites_9
+  - first:
+      213: -108105172264209964
+    second: Mobile - Flappy Bird - General Sprites_12
+  - first:
+      213: 3854300519702870287
+    second: _1
+  - first:
+      213: 8902698031392753677
+    second: Mobile - Flappy Bird - General Sprites_11
+  - first:
+      213: 1822604288209978057
+    second: Mobile - Flappy Bird - General Sprites_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -432,7 +447,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_8
+      name: uiImage
       rect:
         serializedVersion: 2
         x: 146
@@ -460,9 +475,9 @@ TextureImporter:
         y: 180
         width: 17
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.5051646, y: 0.49268213}
+      border: {x: 3, y: 3, z: 3, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -495,7 +510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_11
+      name: _0
       rect:
         serializedVersion: 2
         x: 287
@@ -525,7 +540,7 @@ TextureImporter:
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 3, z: 3, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -558,7 +573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_14
+      name: number0
       rect:
         serializedVersion: 2
         x: 288
@@ -663,12 +678,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_19
+      name: number1
       rect:
         serializedVersion: 2
-        x: 291
+        x: 289
         y: 128
-        width: 5
+        width: 7
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -705,7 +720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_21
+      name: okButton
       rect:
         serializedVersion: 2
         x: 246
@@ -726,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_22
+      name: number2
       rect:
         serializedVersion: 2
         x: 289
@@ -747,7 +762,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_23
+      name: Rank-Bronze
       rect:
         serializedVersion: 2
         x: 302
@@ -789,7 +804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_25
+      name: Rank-None
       rect:
         serializedVersion: 2
         x: 220
@@ -873,13 +888,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_29
+      name: number3
       rect:
         serializedVersion: 2
         x: 289
-        y: 87
+        y: 96
         width: 7
-        height: 19
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,7 +993,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_34
+      name: number4
       rect:
         serializedVersion: 2
         x: 287
@@ -1020,7 +1035,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_36
+      name: number5
       rect:
         serializedVersion: 2
         x: 287
@@ -1041,12 +1056,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_37
+      name: Title-Game Over
       rect:
         serializedVersion: 2
         x: 146
-        y: 37
-        width: 93
+        y: 38
+        width: 94
         height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1057,27 +1072,6 @@ TextureImporter:
       bones: []
       spriteID: a96526047313e6046af1376654f1066c
       internalID: 21300074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_38
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 38
-        width: 43
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1127c9bc416b58440a2b73c8b8b6048c
-      internalID: 21300076
       vertices: []
       indices: 
       edges: []
@@ -1104,7 +1098,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_40
+      name: _6
       rect:
         serializedVersion: 2
         x: 284
@@ -1125,7 +1119,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_41
+      name: _7
       rect:
         serializedVersion: 2
         x: 292
@@ -1146,7 +1140,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_42
+      name: startButton
       rect:
         serializedVersion: 2
         x: 242
@@ -1167,7 +1161,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_43
+      name: _8
       rect:
         serializedVersion: 2
         x: 284
@@ -1188,7 +1182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_44
+      name: _9
       rect:
         serializedVersion: 2
         x: 292
@@ -1209,7 +1203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_45
+      name: Title-Get Ready
       rect:
         serializedVersion: 2
         x: 146
@@ -1230,28 +1224,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_46
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 13
-        width: 51
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2c9a2ae42fc57f41abc145017ddeedb
-      internalID: 21300092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_47
+      name: Rank-Gold
       rect:
         serializedVersion: 2
         x: 242
@@ -1272,7 +1245,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_48
+      name: Rank-Silver
       rect:
         serializedVersion: 2
         x: 266
@@ -1314,7 +1287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_50
+      name: Rank - New
       rect:
         serializedVersion: 2
         x: 146
@@ -1335,7 +1308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_51
+      name: number6
       rect:
         serializedVersion: 2
         x: 165
@@ -1356,7 +1329,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_52
+      name: number7
       rect:
         serializedVersion: 2
         x: 175
@@ -1377,7 +1350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_53
+      name: number8
       rect:
         serializedVersion: 2
         x: 185
@@ -1398,7 +1371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_54
+      name: number9
       rect:
         serializedVersion: 2
         x: 195
@@ -1419,7 +1392,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_55
+      name: _2
       rect:
         serializedVersion: 2
         x: 204
@@ -1440,7 +1413,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_56
+      name: _3
       rect:
         serializedVersion: 2
         x: 212
@@ -1461,7 +1434,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_57
+      name: _4
       rect:
         serializedVersion: 2
         x: 220
@@ -1482,7 +1455,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - General Sprites_58
+      name: _5
       rect:
         serializedVersion: 2
         x: 228
@@ -1498,6 +1471,69 @@ TextureImporter:
       bones: []
       spriteID: 153c939a90a82244088830c0339b5657
       internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Flappy Bird - General Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 169
+        width: 1
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193898281032b46d0800000000000000
+      internalID: -3005269836947684463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Flappy Bird - General Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 63
+        width: 7
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d13fc82beeef7ef0800000000000000
+      internalID: -108105172264209964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f093e76d6e93d7530800000000000000
+      internalID: 3854300519702870287
       vertices: []
       indices: 
       edges: []

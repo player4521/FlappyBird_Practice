@@ -9,9 +9,38 @@ public class UIManager : Singleton<UIManager>
     [SerializeField]
     private GameObject _title = null;
     [SerializeField]
+    private GameObject _newBestScore = null;
+    [SerializeField]
     private Button _startButton = null;
     [SerializeField]
     private Button _tapButton = null;
+    [SerializeField]
+    private NumbersRenderer _score = null;
+    [SerializeField]
+    private GameOverPopup _gameOverPopup = null;
+    public int Score
+    {
+        set
+        {
+            _newBestScore.SetActive(Manager.Instance.isCurrentBestScore);
+            _score.Value = value;
+        }
+    }
+
+    public void Init()
+    {
+        _title.gameObject.SetActive(false);
+        _startButton.gameObject.SetActive(false);
+        _tapButton.gameObject.SetActive(false);
+        _score.gameObject.SetActive(false);
+        _gameOverPopup.gameObject.SetActive(false);
+        _newBestScore.SetActive(false);
+    }
+    public void ShowTitle()
+    {
+        _title.gameObject.SetActive(true);
+        _startButton.gameObject.SetActive(true);
+    }
 
     public void StartButton()
     {
@@ -19,6 +48,11 @@ public class UIManager : Singleton<UIManager>
 
         _title.SetActive(false);
         _startButton.gameObject.SetActive(false);
+    }
+
+    private void ShowTapButton()
+    {
+        _tapButton.gameObject.SetActive(true);
     }
 
     public void TapButton()
@@ -30,13 +64,17 @@ public class UIManager : Singleton<UIManager>
         _tapButton.gameObject.SetActive(false);
     }
 
-    private void ShowTapButton()
+    public void ShowScore()
     {
-        _tapButton.gameObject.SetActive(true);
+        _score.Value = 0;
+        _score.gameObject.SetActive(true);
+        _newBestScore.SetActive(false);
     }
 
-    private void ShowScore()
+    public void InvokeGameOver()
     {
-
+        _gameOverPopup.gameObject.SetActive(true);
+        _score.gameObject.SetActive(false);
+        _newBestScore.SetActive(false);
     }
 }

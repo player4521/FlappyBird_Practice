@@ -70,6 +70,10 @@
     <Compile Include="Assets\Script\Game\MoveObject.cs" />
     <Compile Include="Assets\Script\Game\Pipe.cs" />
     <Compile Include="Assets\Script\Game\Singleton.cs" />
+    <Compile Include="Assets\Script\UI\GameOverPopup.cs" />
+    <Compile Include="Assets\Script\UI\MedalRenderer.cs" />
+    <Compile Include="Assets\Script\UI\NumberRenderer.cs" />
+    <Compile Include="Assets\Script\UI\NumbersRenderer.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

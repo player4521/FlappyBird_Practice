@@ -38,6 +38,7 @@ public class Pipe : MoveObjects
     {
         base.GameUpdate();
     }
+
     override protected void FinishEndPosition()
     {
         Manager.Instance.Remove(this);
@@ -48,7 +49,7 @@ public class Pipe : MoveObjects
     /// </summary>
     /// <param name="target"></param>
     /// <returns></returns>
-    public bool isNeedInvokeScoreCheck(Vector3 target)
+    public bool IsNeedInvokeScoreCheck(Vector3 target)
     {
         if (!_bCheck)
         {

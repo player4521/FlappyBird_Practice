@@ -5,9 +5,9 @@ using UnityEngine;
 public class MoveObjects : MonoBehaviour, IGameObject
 {
     [SerializeField]
-    private float _startPositionX = 0.05f;
+    private float _startPositionX = 0.9f;
     [SerializeField]
-    private float _endPositionX = -0.014f;
+    private float _endPositionX = -2f;
 
     virtual public void GameUpdate()
     {
@@ -17,20 +17,22 @@ public class MoveObjects : MonoBehaviour, IGameObject
     // 이동 시켜주는 처리
     private void Move()
     {
-        Vector3 position = transform.position;
-        position.x -= Manager.Instance.Speed;
-        if (position.x < _endPositionX)
+        Vector3 result = transform.position;
+        result.x -= Manager.Instance.Speed;
+        if (result.x < _endPositionX)
         {
             FinishEndPosition();
         }
         else
         {
-            transform.position = position;
+            transform.position = result;
         }
     }
 
     virtual protected void FinishEndPosition()
     {
-        transform.position = new Vector3(_startPositionX, transform.position.y, 0);
+        Vector3 result = transform.position;
+        result.x = _startPositionX;
+        transform.position = result;
     }
 }

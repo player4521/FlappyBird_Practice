@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class NumbersRenderer : MonoBehaviour
 {
-    //[SerializeField]
     [Range(0, 999)]
     private int _value = 0;
 
@@ -22,11 +21,6 @@ public class NumbersRenderer : MonoBehaviour
             Render();
         }
     }
-
-    //void Update()
-    //{
-    //    Render();
-    //}
 
     private void Render()
     {

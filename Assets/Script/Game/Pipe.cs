@@ -44,11 +44,6 @@ public class Pipe : MoveObjects
         Manager.Instance.Remove(this);
     }
 
-    /// <summary>
-    /// Bird 와 위치를 검사하는 처리
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
     public bool IsNeedInvokeScoreCheck(Vector3 target)
     {
         if (!_bCheck)

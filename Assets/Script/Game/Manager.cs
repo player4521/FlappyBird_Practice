@@ -15,11 +15,11 @@ public class Manager : Singleton<Manager>
     [SerializeField]
     private float _speed = 0.001f;
     [SerializeField]
-    private float _createTime = 1.0f;
+    private float _createTime = 0.0f;
     [SerializeField]
-    private float _pipeRandomHeight = 0.4f;
+    private float _pipeRandomHeight = 0.0f;
     [SerializeField]
-    private float _pipeRandomPositionY = 0.5f;
+    private float _pipeRandomPositionY = 0.0f;
 
     private float _currentTime = 0.0f;
 

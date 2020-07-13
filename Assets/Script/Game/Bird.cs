@@ -40,7 +40,7 @@ public class Bird : MonoBehaviour, IGameObject
 
     public void FreezePositionY(bool value)
     {
-        _rigidbody.constraints = value ? RigidbodyConstraints2D.FreezePositionY : RigidbodyConstraints2D.None;
+        _rigidbody.constraints = value ? RigidbodyConstraints2D.FreezePosition : RigidbodyConstraints2D.None;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
